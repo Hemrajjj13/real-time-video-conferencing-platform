@@ -2,20 +2,20 @@
 
 SyncSpace is a full-stack video meeting app built with React, Vite, Express, MongoDB, and Socket.IO.
 
-It supports:
+## What It Supports
 
-- user signup and login
-- creating and joining meeting rooms
-- live chat inside meetings
-- participant presence updates
-- recent room history
-- camera, microphone, and screen share controls
-- responsive meeting and dashboard UI
+- User signup and login
+- Creating and joining meeting rooms
+- Live chat inside meetings
+- Participant presence updates
+- Recent room history
+- Camera, microphone, and screen share controls
+- Responsive meeting and dashboard UI
 
 ## Project Structure
 
 ```text
-Zoom-main/
+SyncSpace/
   backend/
   frontend/
 ```
@@ -26,7 +26,7 @@ Zoom-main/
 ## Features
 
 - Authentication with username and password
-- Token-based session handling
+- Token-based session handling with a generated login token stored in the database and client storage
 - Meeting room join flow with display name
 - Live chat between participants
 - Recent room history on the home page
@@ -58,6 +58,7 @@ Zoom-main/
 - MongoDB connection string
 
 ## Environment Variables
+
 
 ### Backend
 
@@ -98,22 +99,21 @@ npm install
 
 Open two terminals.
 
-### Terminal 1: backend
+### Terminal 1: Backend
 
 ```bash
 cd backend
 npm run dev
 ```
 
-### Terminal 2: frontend
+### Terminal 2: Frontend
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Frontend runs on Vite's local dev server.
-Backend runs on `http://localhost:8000`.
+Frontend runs on Vite's local dev server. Backend runs on `http://localhost:8000`.
 
 ## Available Scripts
 
@@ -178,15 +178,15 @@ npm run build
 
 This project is set up as a mid-level Zoom-style meeting app with the following working flows:
 
-- auth
-- meeting join/create
-- live chat
-- room history
-- responsive UI
+- Auth
+- Meeting join and create flow
+- Live chat
+- Room history
+- Responsive UI
 
 ## Future Improvements
 
-- persistent meeting participants in database
-- better call quality and reconnection handling
-- invite sharing improvements
-- production deployment config
+- Persistent meeting participants in database
+- Better call quality and reconnection handling
+- Invite sharing improvements
+- Production deployment config
